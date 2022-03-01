@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/ines/Documents/PlatformIO/Projects/autonomous_bonsai'
+make: Leaving directory '/home/ines/Documents/PlatformIO/Projects/autonomous_bonsai'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+ 
