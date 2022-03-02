@@ -21,12 +21,10 @@ void loop() {
 
   if((currentTime - lastTime) >= 30000) {
     
-    int value = analogRead(GPIO_MOISTURE_SENSOR);
-    Serial.print("Value");
-    Serial.print(value);
-    Serial.println("\n");
-  
-    mqttClient.publish_moisture(value);
+    int analog_value = analogRead(GPIO_MOISTURE_SENSOR);
+    uint16_t moistVal = map(analog_value, 0, 1023, 100, 0);
+
+    mqttClient.publish_moisture(moistVal);
     lastTime = currentTime;
   }
 
