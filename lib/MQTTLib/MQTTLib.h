@@ -21,7 +21,7 @@ class MQTTLib {
         MQTTLib();
         ~MQTTLib();
         void init();
-        void publish_moisture(const int payload) const;
+        void publish_moisture(const uint16_t payload) const;
     private:
         WiFiClient espClient;
         PubSubClient MQTTClient;
