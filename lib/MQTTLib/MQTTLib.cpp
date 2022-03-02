@@ -45,7 +45,7 @@ void MQTTLib::setup_mqtt() {
     MQTTClient.setServer(MQTT_IP, MQTT_PORT);
 }
 
-void MQTTLib::publish_moisture(const int payload) const {
+void MQTTLib::publish_moisture(const uint16_t payload) const {
     StaticJsonDocument<32> doc;
     doc["moisture"] = payload;
     // MQTTClient.publish(MQTT_PUB_MOISTURE, (char*) serializeJson(doc, Serial));
