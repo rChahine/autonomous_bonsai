@@ -20,6 +20,7 @@ void MQTTLib::init() {
 }
 
 MQTTLib::~MQTTLib() {
+    MQTTClient.disconnect();
     WiFi.disconnect();
 }
 
