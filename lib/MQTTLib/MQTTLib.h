@@ -6,7 +6,7 @@
 #include <ArduinoJson.h>
 
 // WIFI
-#define WIFI_SSID 
+#define WIFI_SSID "iPhone11"
 #define WIFI_PASSWORD "richarda"
 
 // MQTT

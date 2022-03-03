@@ -26,7 +26,7 @@ MQTTLib::~MQTTLib() {
 void MQTTLib::setup_wifi() {
     
     WiFi.mode(WIFI_STA);
-    WiFi.begin("iPhone 11", "123456789");
+    WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
 
     delay(10000);
 
